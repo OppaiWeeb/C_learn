@@ -1,23 +1,22 @@
-// fichier pointeur2.c
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
-  int i;
-  int *pi;
+int changeValue(int *valueToChange);
 
-  pi = malloc(sizeof(int));
+int main(){
+    int i = 5;
+    int *Pi =&i;
 
-  *pi=3;
-  i=*pi;
-  printf("(via la variable) Valeur=%d; adresse=%p\n",i,&i);
-  printf("(via le pointeur) Valeur=%d; adresse=%p\n",*pi,pi);
+    printf("the value of i is %d and his address is %p\n", i, &i);
+    printf("The value of pointer P for i is %p and his value is %d\n", Pi, *Pi);
 
-  *pi = 4;
-  printf("(via la variable) Valeur=%d; adresse=%p\n",i,&i);
-  printf("(via le pointeur) Valeur=%d; adresse=%p\n",*pi,pi);
+    changeValue(Pi);
+    printf("Now the value of i is %d\n", i);
+    printf("The new value of Pi is %p and the value is %d", Pi, *Pi);
+    return 0;
+}
 
-  free(pi);
-  return 0;
+int changeValue(int *valueToChange){
+    *valueToChange = 10;
+    return 0;
 }
