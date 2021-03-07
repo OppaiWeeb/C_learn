@@ -1,0 +1,10 @@
+int jambe1();
+int jambe2();
+int bras1();
+int bras2();
+int corp();
+int tete();
+int echaffaud1();
+int echaffaud2();
+int echaffaud3();
+int echaffaud4();

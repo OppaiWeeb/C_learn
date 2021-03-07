@@ -1,5 +1,7 @@
 // fichier readDB
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 int main(int argc, char **argv) {
   
@@ -21,15 +23,24 @@ int main(int argc, char **argv) {
   }
   
   //recupere les infos
-  int count,age;
+  int age, i=0;
   char ligne[100] = "";
-  char *nom,*prenom = "";
-  char *sex;
+  char *nom="";
+  char *prenom = "";
+  char *sex="";
+  char *perso[4]={0};
+
   while (fgets(ligne, 100, fichier) != NULL) {
-    printf("%s\n",ligne);
-    sscanf("%s %s %d %s",nom,prenom,&age,sex);
-    printf("%s %s %d %s",nom,prenom,age,sex);
+    char ligne = strip(ligne, "\n");
+    printf("%s, %d",ligne, i);
+    perso[i]=ligne;
+    printf("\n");
+    i++;
   }
+
+  printf("Nom: %s, Prenom: %s, Sexe: %c, Age %d", perso[0], perso[1], perso[2], perso[3] );
+  
+  
   
   // ferme le fichier ouvert
   fclose(fichier);
