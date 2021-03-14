@@ -109,3 +109,15 @@ int echaffaud4(){
     printf(" ___|___\n");
     return 0;
 }
+
+void main(){
+    echaffaud1();
+    echaffaud2();
+    echaffaud3();
+    echaffaud4();
+    tete();
+    bras1();
+    bras2();
+    jambe1();
+    jambe2();
+}

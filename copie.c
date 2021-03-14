@@ -31,13 +31,15 @@ int main(int argc, char **argv) {
   char *perso[4]={0};
 
   while (fgets(ligne, 100, fichier) != NULL) {
-    char ligne = strip(ligne, "\n");
     printf("%s, %d",ligne, i);
-    perso[i]=ligne;
-    printf("\n");
     i++;
   }
 
+  for (int j = 0; j < i; j++)
+  {
+    perso[j]=fgets(ligne, 100, fichier);
+  }
+  
   printf("Nom: %s, Prenom: %s, Sexe: %c, Age %d", perso[0], perso[1], perso[2], perso[3] );
   
   
