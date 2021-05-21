@@ -1,10 +1,3 @@
----
-theme: gaia
-_class: lead
-paginate: false
-backgroundColor: #f4f4f4
-backgroundImage:
----
 # Learn C
 ## Les variables
 il y a différents types de variables que l'ont peux utilisé en C.
@@ -15,7 +8,6 @@ il y a différents types de variables que l'ont peux utilisé en C.
 
 Les variable sont des allocation de block memoires que le programme occupe.
 
----
 ## Les conditions
 Les conditions s'éffectue aussi bien sur des fonctions que sur des variables.
 - Plus grand que *variable1 > variable2*
@@ -26,7 +18,7 @@ Les conditions s'éffectue aussi bien sur des fonctions que sur des variables.
 - Diffèrent de *variable1 != variable2*
 
 Les Conditions sont des vérifications entre deux variables ou deux fonctions.
----
+
 ## Les Boucles
 Les boucles sont des répetitions de code si un etat n'est pas atteins.
 - Boucles *for*
