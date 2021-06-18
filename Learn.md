@@ -17,7 +17,7 @@ Les conditions s'éffectue aussi bien sur des fonctions que sur des variables.
 - Égale a *variable1 == variable2*
 - Diffèrent de *variable1 != variable2*
 
-Les Conditions sont des vérifications entre deux variables ou deux fonctions.
+Les Conditions sont des vérifications entre deux variables ou deux resultat de fonctions.
 
 ## Les Boucles
 Les boucles sont des répetitions de code si un etat n'est pas atteins.
