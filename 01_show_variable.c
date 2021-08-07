@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char h[7]="hello, ";
-char w[6]="world";
 
-int main(){
-	printf("%s\n", h, w);
+int main(int argc, char *argv[]){
+	char *var1 = "Hello";
+	char *var2 = "world";
+	printf("%s, %s!\n", var1, var2);
 	return 0;
 }
