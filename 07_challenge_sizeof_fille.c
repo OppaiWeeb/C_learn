@@ -16,7 +16,7 @@ int main(int argc, char ** argv){
 
 	if(access(file_name, F_OK)==0){
 		f =fopen(file_name, "r");
-		int f_size;
+		long f_size;
 		fseek(f, 0, SEEK_END);
 		f_size = ftell(f);
 		rewind(f);
@@ -26,6 +26,5 @@ int main(int argc, char ** argv){
 		printf("Fatal error\n exit"); 
 		return 1;
 	}
-
-	return 0;
+  return 0;
 }
