@@ -4,7 +4,7 @@
 int main(int argc, char const *argv[])
 {
 	int user_live = 1;
-	printf("the user have %d live\n", user_live);
+	printf("the user have %d life\n", user_live);
 	printf("the user is touched by an enemy and may take 1 damage.\n");
 	printf("did the user take the damage? [y/n]: ");	char yn;
 	scanf("%c", &yn);
